@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cloud-api-svc
+  annotations:
+    github.com/project-slug: ajax-systems/cloud-api-svc
+    jenkins.io/job-full-name: Ajax Systesms/Ajax Systesms/cloud-api-svc
+spec:
+  type: service
+  lifecycle: production
+  owner: user:ajax-perets-m
+  consumesApis:
+    - a911-server-api
+    - nats-client
