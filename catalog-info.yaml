@@ -4,6 +4,15 @@ metadata:
   name: test-svc
   annotations:
     github.com/project-slug: ajax-kuzyk-a/test-svc
+  links:
+    - url: https://kibana.prod-internal.ajax.systems/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:now-15m,to:now))&_a=(columns:!(),filters:!(),hideChart:!t,index:company-svc,interval:auto,query:(language:kuery,query:''),sort:!(!('@timestamp',desc)))
+      title: Kibana prod
+      icon: chat
+      type: logs
+    - url: https://kibana.stage-internal.ajax.systems/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:60000),time:(from:now-15m,to:now))&_a=(columns:!(),filters:!(),hideChart:!t,index:company-svc,interval:auto,query:(language:kuery,query:''),sort:!(!('@timestamp',desc)))
+      title: Kibana stage
+      icon: chat
+      type: logs
 spec:
   type: service
   lifecycle: test
