@@ -16,6 +16,9 @@ metadata:
       title: Kibana stage
       icon: chat
       type: logs
+    - url: https://ajaxsystems.atlassian.net/wiki/search?labels=company-svc%2Crca  
+      title: RCA
+      icon: warning
 spec:
   type: service
   lifecycle: test
